@@ -23,8 +23,8 @@ Este proyecto contiene un análisis preliminar del recorrido de 10K correspondie
 5. **Elevación por kilómetro**:
    - Análisis de ganancia o pérdida de altitud durante la carrera.
    - Visualización del perfil de elevación.
-6. **Mapa con kilómetros
-7. **Mapa consolidado por kilómetros y tiempos
+6. **Mapa con kilómetros**
+7. **Mapa consolidado por kilómetros y tiempos**
 
 ## 🛠️ Librerías utilizadas
 
