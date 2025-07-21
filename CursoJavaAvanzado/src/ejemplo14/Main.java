@@ -1,0 +1,11 @@
+package ejemplo14;
+
+import java.util.List;
+public class Main {
+    public static void main(String[] args) {
+        var lista = List.of("A", "B", "C");
+        for (var elemento : lista) {
+            System.out.println(elemento);
+        }
+    }
+}

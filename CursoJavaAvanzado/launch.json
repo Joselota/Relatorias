@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Ejemplo2 Main", // Un nombre descriptivo
+            "request": "launch",
+            "mainClass": "ejemplo2.Main", // ¡Importante! Aquí especificas el paquete y la clase
+            "projectName": "CursoJavaAvanzado", // Tu nombre de proyecto en VS Code
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo1 Main", // Otro nombre descriptivo
+            "request": "launch",
+            "mainClass": "ejemplo1.Main", // ¡Importante! Aquí especificas el paquete y la clase
+            "projectName": "CursoJavaAvanzado",
+            "console": "internalConsole"
+        }
+    ]
+}
