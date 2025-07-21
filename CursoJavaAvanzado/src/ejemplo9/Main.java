@@ -2,7 +2,7 @@ package ejemplo9;
 
 import java.util.Optional; // Necesitas importar Optional
 
-public class Main { // Puedes ponerlo en tu clase Main o en una nueva clase
+public class Main { 
     
     // El método obtenerNombreUsuario proporcionado en el ejercicio
     public static Optional<String> obtenerNombreUsuario(boolean existe) {

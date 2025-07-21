@@ -4,6 +4,11 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/*
+ Este programa toma una lista de números y aplica una función matemática (en este caso, multiplicar por 2) a cada uno,
+  generando una nueva lista con los resultados.
+ */
+
 public class Main {
     public static List<Integer> aplicarFuncion(List<Integer> numeros, Function<Integer, Integer> f) {
         return numeros.stream()
