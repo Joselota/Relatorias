@@ -9,7 +9,6 @@ Si el nombre no ha aparecido antes, comienza contando desde 0.
 Cada vez que lo encuentra, le suma 1 al contador de ese nombre.
 Al final, el programa imprime un resumen con el total de veces que aparece cada nombre.
 */
-
 public class Main {
     public static void main(String[] args) {
         List<String> nombres = Arrays.asList("Ingrid", "Pedro", "Ingrid", "Camila", "Pedro", "Pedro");

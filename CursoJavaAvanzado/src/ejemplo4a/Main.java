@@ -11,9 +11,9 @@ Como un Map no permite claves repetidas, el segundo valor de "Lápiz" (el 12) re
 Después, se imprimen dos cosas:
 - Todo el mapa, que mostrará los productos y sus cantidades.
 - El valor asociado a "Lápiz", que será 12. 
+
+HashMap es una colección en Java que almacena pares de clave-valor, sin un orden garantizado, optimizada para recuperar valores rápidamente usando sus claves únicas.
  */
-
-
 public class Main {
     public static void main(String[] args) {
         Map<String, Integer> stock = new HashMap<>();
