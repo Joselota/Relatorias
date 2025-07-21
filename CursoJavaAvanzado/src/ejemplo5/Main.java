@@ -1,5 +1,11 @@
 package ejemplo5;
 import java.util.*;
+/* Este programa demuestra cómo funcionan tres estructuras de datos distintas en Java:
+- Una lista (LinkedList)
+- Un conjunto (TreeSet)
+- Un mapa (LinkedHashMap)
+Cada una se usa para almacenar datos de distinta forma, y aquí se prueban operaciones básicas.
+ */
 public class Main {
     public static void main(String[] args) {
         List<String> lista = new LinkedList<>();

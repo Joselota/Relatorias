@@ -1,6 +1,10 @@
 package ejemplo6;
 
 import java.util.*;
+//
+//Mostrar la diferencia entre una lista mutable (que se puede modificar) y una lista inmutable (que no se puede cambiar).
+//
+
 public class Main {
     public static void main(String[] args) {
         // Lista mutable​
