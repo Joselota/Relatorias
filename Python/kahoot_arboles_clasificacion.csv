@@ -1,0 +1,6 @@
+Pregunta,Opción A,Opción B,Opción C,Opción D,Respuesta Correcta
+¿Qué representa un Falso Positivo en un modelo de clasificación en salud?,"El modelo predijo saludable, pero en realidad no lo era",El modelo acertó en su predicción,"El modelo predijo no saludable, pero sí lo era",El modelo no pudo predecir,A
+¿Qué significa la métrica de precisión (precision)?,Porcentaje de aciertos totales,Correctos entre los que el modelo predijo como positivos,Error cuadrático medio del modelo,Correctos entre todos los negativos reales,B
+¿Cuál fue la variable más usada al principio del árbol de decisión?,Age,Sleep_Hours,Smoking_Status,Depende del modelo entrenado,D
+¿Qué representa un Falso Negativo?,"El modelo predijo saludable, pero en realidad no lo era","El modelo predijo no saludable, pero sí lo era",El modelo acertó en no saludable,La precisión del modelo baja,B
+¿Qué métrica evalúa el balance entre precisión y recall?,Accuracy,MSE,F1-score,R2,C
