@@ -1,0 +1,7 @@
+Pregunta,Opción A,Opción B,Opción C,Opción D,Respuesta Correcta
+¿Cuál de los siguientes ejemplos corresponde a aprendizaje supervisado?,Agrupar pacientes según síntomas,Predecir si un paciente tiene una enfermedad o no,Encontrar temas comunes en un conjunto de artículos,Reducir las dimensiones de una imagen,B
+En el aprendizaje no supervisado…,Siempre se conoce el valor de salida (target),Se entrena el modelo con pares entrada-salida,Se busca descubrir estructuras ocultas en los datos,Se evalúa con precisión y recall,C
+¿Qué algoritmo se asocia con aprendizaje no supervisado?,Regresión lineal,Árboles de decisión,K-means,Regresión logística,C
+"En el dataset del Titanic, predecir la columna `Survived` es un problema de:",Clasificación supervisada,Clustering no supervisado,Regresión no supervisada,Agrupamiento supervisado,A
+¿Qué caracteriza al aprendizaje supervisado?,Agrupa los datos sin etiquetas,Solo se usan variables numéricas,Aprende a partir de datos con etiquetas conocidas,No se entrena el modelo con datos históricos,C
+¿Cuál es una métrica común para evaluar modelos supervisados de clasificación?,Inercia,Número de clústeres,Precisión (accuracy),Variación intra-clúster,C
