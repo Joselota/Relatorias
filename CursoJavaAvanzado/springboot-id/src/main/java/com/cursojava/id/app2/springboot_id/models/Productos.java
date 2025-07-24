@@ -1,8 +1,17 @@
 package com.cursojava.id.app2.springboot_id.models;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
+@Schema(description = "Modelo que representa un producto")
 public class Productos {
+    
+    @Schema(description = "Identificador único del producto", example = "1")
     private Long idProducto;
+    
+    @Schema(description = "Nombre del producto", example = "Disco duro 1TB")
     private String nombre;
+    
+    @Schema(description = "Precio del producto en pesos", example = "500")
     private int precio;
 
     public Productos(Long idProducto, String nombre, int precio) {
