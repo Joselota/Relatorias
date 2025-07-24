@@ -1,0 +1,11 @@
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/service/ProductoService.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/factory/ClienteRest.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/factory/ClienteRESTExterno.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/model/Producto.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/PatronesApplication.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/singleton/Logger.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/dao/ProductoDaoImpl.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/dao/ProductoDao.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/controller/ProductoController.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/factory/ClienteRestFactory.java
+/Users/desarrollo/Relatorias/CursoJavaAvanzado/src/main/java/com/example/patrones/factory/ClienteRESTInterno.java

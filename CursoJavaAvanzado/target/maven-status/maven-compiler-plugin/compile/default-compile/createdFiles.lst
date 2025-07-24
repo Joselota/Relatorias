@@ -1,0 +1,11 @@
+com/example/patrones/PatronesApplication.class
+com/example/patrones/model/Producto.class
+com/example/patrones/singleton/Logger.class
+com/example/patrones/factory/ClienteRestFactory.class
+com/example/patrones/dao/ProductoDaoImpl.class
+com/example/patrones/service/ProductoService.class
+com/example/patrones/factory/ClienteRESTExterno.class
+com/example/patrones/dao/ProductoDao.class
+com/example/patrones/factory/ClienteRESTInterno.class
+com/example/patrones/factory/ClienteRest.class
+com/example/patrones/controller/ProductoController.class
