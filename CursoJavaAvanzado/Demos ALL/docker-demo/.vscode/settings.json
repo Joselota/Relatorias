@@ -1,0 +1,5 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "spring-boot.ls.problem.application-properties.enabled": true,
+    "java.compile.nullAnalysis.mode": "automatic"
+}

@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+resilience4j:
+  retry:
+    instances:
+      producto-api:
+        max-attempts: 3
+        wait-duration: 2s
+
+  circuitbreaker:
+    instances:
+      producto-api:
+        sliding-window-size: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
