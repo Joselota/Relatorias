@@ -1,0 +1,301 @@
+IdPedido,IdCliente,IdEmpleado,FechaPedido,ViaEnvio,Cargo,Destinatario
+1,C009,1,2025-04-05,3,246.23,Diez-Carbó
+2,C029,5,2025-04-14,3,189.18,Merino Inc
+3,C018,1,2024-11-10,2,179.11,Mesa PLC
+4,C022,10,2025-01-26,2,92.02,Puente-Fiol
+5,C020,2,2023-10-17,2,236.5,"Herrero, Cal and Mata"
+6,C025,7,2025-06-09,1,129.15,"Carrillo, Armengol and Olivera"
+7,C027,9,2024-10-05,2,453.74,Pellicer-Bayón
+8,C011,6,2024-09-14,3,86.26,"Nogueira, Alberola and Rivera"
+9,C018,8,2025-05-18,2,78.02,Camacho-Rosselló
+10,C029,4,2024-05-26,2,148.74,"Segura, Coronado and Rozas"
+11,C022,1,2024-01-02,1,339.24,"Vélez, León and Tomás"
+12,C011,7,2024-08-14,2,388.4,Ledesma-Mora
+13,C020,3,2025-06-10,1,106.8,Bolaños LLC
+14,C006,10,2025-07-03,3,483.68,Hervás-Sobrino
+15,C019,7,2024-11-03,2,473.66,"Pinilla, Navarrete and Andrade"
+16,C020,2,2024-09-05,3,402.19,Espada-Torrent
+17,C014,6,2024-01-30,3,451.21,Jordán-Niño
+18,C009,8,2024-03-23,1,387.71,"Llorente, Agustín and Villanueva"
+19,C001,9,2024-01-14,1,88.53,Hernández Ltd
+20,C022,10,2024-06-29,2,262.97,Hernandez-Tamayo
+21,C004,9,2025-01-01,3,133.32,"Tudela, Samper and Alemany"
+22,C010,4,2023-10-30,2,130.75,Giralt-Quiroga
+23,C010,3,2025-02-06,3,440.81,Medina Ltd
+24,C016,2,2024-11-12,3,333.25,Sáenz-Núñez
+25,C004,9,2024-07-14,2,322.84,"Muro, Ortiz and Santiago"
+26,C020,1,2024-03-16,3,482.05,Iglesias-Gual
+27,C008,3,2023-11-20,3,83.78,"Fernández, Moles and Carreras"
+28,C002,4,2025-03-18,2,368.13,"Esteve, Feliu and Gascón"
+29,C003,1,2025-03-14,1,406.68,Lloret-Zamorano
+30,C003,10,2024-11-24,1,450.24,Cabrera-Ferrera
+31,C002,3,2024-04-05,2,283.53,Paniagua and Sons
+32,C014,8,2024-04-09,2,348.16,Castañeda LLC
+33,C002,4,2023-09-23,3,212.8,Manzano Ltd
+34,C023,3,2023-11-25,2,297.88,"Tudela, Calderon and Alberola"
+35,C016,4,2024-11-06,2,298.07,Soria-Tejero
+36,C022,8,2024-07-26,1,250.95,Espinosa-Aznar
+37,C011,8,2024-03-02,3,461.04,Carbonell-Bas
+38,C005,7,2024-06-25,3,486.48,Benavent-Baeza
+39,C003,6,2023-12-14,3,436.7,Mateu Inc
+40,C006,5,2024-02-27,1,70.7,Rico PLC
+41,C017,7,2024-11-24,3,356.81,"Gonzalez, Yáñez and Pintor"
+42,C030,10,2024-08-02,1,154.48,Martinez-Romeu
+43,C019,5,2024-04-12,3,482.91,"Barrena, Cabezas and Galiano"
+44,C023,5,2024-12-16,1,490.08,Lamas Ltd
+45,C009,3,2023-10-21,3,93.72,Heredia and Sons
+46,C005,2,2024-10-20,2,197.02,Crespi Inc
+47,C003,3,2024-07-01,1,437.06,Soriano-Manuel
+48,C022,4,2023-09-13,2,61.26,Maldonado Ltd
+49,C010,8,2024-03-25,1,93.74,"Santiago, Belda and Guillen"
+50,C021,2,2025-08-05,2,327.04,Figuerola-Rodríguez
+51,C012,1,2023-11-16,2,174.15,"Gomila, Company and Larrañaga"
+52,C002,6,2025-05-22,1,494.97,Bellido Inc
+53,C001,5,2023-12-25,1,494.39,Malo-Saavedra
+54,C009,1,2023-11-23,1,383.77,Mateu-Quevedo
+55,C004,8,2024-03-17,3,149.7,"Uribe, Río and Bernat"
+56,C016,7,2024-11-25,2,358.74,Rosales Ltd
+57,C017,5,2024-04-25,2,277.5,"Ibáñez, Amigó and Bravo"
+58,C024,2,2024-02-12,2,242.04,"Almansa, Leon and Arjona"
+59,C018,1,2025-04-02,3,480.48,Sosa PLC
+60,C019,9,2025-01-06,1,119.63,Lobo-Escudero
+61,C020,5,2024-11-15,1,131.19,Téllez-Bou
+62,C024,9,2024-08-18,1,219.29,Real-Mínguez
+63,C015,7,2024-04-24,2,323.18,"Calvo, Cuevas and Murcia"
+64,C008,7,2024-07-03,3,74.65,"Valbuena, Maldonado and Pérez"
+65,C024,7,2025-05-11,1,108.13,"Arco, Sanz and Borja"
+66,C015,2,2024-04-19,2,309.09,Morales-Carmona
+67,C014,10,2025-04-10,2,285.78,Vilar-Abella
+68,C004,3,2025-01-10,2,138.77,"Sevilla, Reyes and Ballester"
+69,C022,10,2024-01-11,3,335.88,"Pardo, Valentín and Salamanca"
+70,C017,2,2025-03-31,2,257.78,Frutos LLC
+71,C020,9,2024-10-18,2,258.22,Maestre Group
+72,C016,9,2025-07-03,1,480.98,"Tormo, Carrión and Andres"
+73,C012,6,2024-12-20,2,224.34,"Heras, Cuadrado and Mercader"
+74,C009,10,2024-10-19,1,200.01,Raya Inc
+75,C018,7,2024-02-09,3,406.25,Serrano Inc
+76,C010,3,2025-01-03,1,203.78,Valentín Ltd
+77,C020,7,2024-04-01,1,123.01,"Llano, Ribes and Tolosa"
+78,C026,8,2024-08-19,1,290.31,Saura PLC
+79,C006,4,2023-12-09,3,112.28,Farré-Verdejo
+80,C015,9,2025-03-20,1,423.97,Baños LLC
+81,C013,9,2025-04-10,2,156.1,Nieto-Vera
+82,C021,6,2024-03-13,1,111.92,Luna Ltd
+83,C018,10,2024-04-06,3,240.46,"Tovar, Comas and Salom"
+84,C020,9,2024-10-10,1,334.38,Ochoa-Márquez
+85,C006,2,2024-10-20,3,488.59,"Pi, Sarabia and Montserrat"
+86,C013,8,2025-06-24,1,336.05,Haro PLC
+87,C012,9,2024-06-11,2,416.08,Reig Inc
+88,C010,4,2024-04-22,1,406.0,"Suárez, Piquer and Polo"
+89,C009,1,2025-01-15,3,136.0,"Cornejo, Valbuena and Arco"
+90,C023,8,2023-11-25,2,465.94,"Mármol, Cabrera and Sacristán"
+91,C022,5,2023-11-04,2,250.66,"Saura, Alcántara and Cobos"
+92,C017,3,2024-07-02,1,114.25,"Cortes, Benavides and Soria"
+93,C015,2,2025-04-17,3,111.96,Nevado-Puga
+94,C004,5,2025-01-04,2,366.82,Moya Ltd
+95,C006,8,2025-06-16,1,414.73,"Pinto, Moliner and Torrents"
+96,C017,4,2025-06-26,1,493.31,"Araujo, Bayona and Guitart"
+97,C005,10,2024-12-21,1,79.59,"Madrigal, Gordillo and Botella"
+98,C005,9,2024-07-21,3,314.5,Cabrera Group
+99,C011,4,2023-12-26,2,476.37,"Marí, Andres and Arteaga"
+100,C021,3,2024-04-26,3,473.72,Marcos LLC
+101,C002,10,2024-06-05,2,343.01,Coello-Hidalgo
+102,C002,3,2024-10-04,2,237.03,Escolano-Domínguez
+103,C008,8,2024-01-01,1,170.36,Piñeiro PLC
+104,C027,6,2025-01-30,3,374.51,Valenciano PLC
+105,C013,9,2023-12-08,2,485.01,Serra Ltd
+106,C018,1,2024-03-03,1,243.92,Jara-Agustí
+107,C003,7,2025-07-17,3,252.66,Maestre-Cruz
+108,C020,9,2023-10-15,2,275.04,Ojeda-Martínez
+109,C015,3,2024-12-27,3,451.91,Ibáñez-Saura
+110,C017,9,2025-06-05,3,270.43,Flor-Planas
+111,C016,5,2025-06-11,3,402.31,Campillo-Gálvez
+112,C027,4,2024-06-10,1,307.66,"Palomar, Marqués and Marquez"
+113,C014,4,2023-09-05,2,275.82,"Priego, Llobet and Aguiló"
+114,C018,6,2024-10-31,3,397.4,"Avilés, Valdés and Macías"
+115,C023,8,2025-04-12,2,265.91,Ortuño and Sons
+116,C023,2,2024-12-25,2,465.8,Iglesia Ltd
+117,C019,4,2025-03-27,1,72.84,"Cerro, Caballero and Ariza"
+118,C025,3,2024-04-14,1,484.03,Aragonés-Patiño
+119,C002,2,2025-03-09,3,308.36,Bosch LLC
+120,C006,5,2024-04-28,1,54.17,"Ribes, Echevarría and Font"
+121,C016,3,2023-11-29,3,260.61,"Paz, Valls and Llamas"
+122,C011,5,2025-05-25,3,353.48,Jimenez Group
+123,C022,2,2025-05-06,1,491.76,Nevado-Cardona
+124,C021,6,2024-08-16,3,156.34,Chico and Sons
+125,C025,5,2025-06-17,3,102.84,"Puerta, Paz and Bosch"
+126,C023,9,2025-04-24,2,390.81,Alcalá-Lamas
+127,C004,1,2024-10-08,3,456.3,Sanz LLC
+128,C007,10,2025-01-22,2,90.92,"Juárez, Piquer and Pera"
+129,C027,1,2023-11-11,3,148.06,"Guillen, Soto and Amaya"
+130,C002,2,2024-12-12,2,64.28,"Mosquera, Giralt and Barroso"
+131,C021,6,2024-12-24,1,130.31,Matas-Real
+132,C015,6,2023-11-17,1,174.04,Arrieta Inc
+133,C003,2,2024-04-11,3,65.11,Carmona-Cabanillas
+134,C007,1,2024-02-17,1,276.75,"Cerdá, Pont and Santiago"
+135,C014,5,2024-06-02,2,77.43,"Rius, Cortes and Ribera"
+136,C011,7,2025-01-08,2,117.15,Tovar PLC
+137,C013,4,2024-06-30,2,141.5,Aparicio-Pellicer
+138,C009,7,2024-02-03,3,322.24,Sales-Guzman
+139,C016,4,2025-06-13,2,186.43,Cabezas-Pedrero
+140,C023,10,2024-10-14,3,142.03,"Palmer, Barrera and Puig"
+141,C009,6,2024-03-20,3,447.27,Carvajal Group
+142,C019,7,2023-10-29,2,118.59,"Garay, Almazán and Ayuso"
+143,C006,6,2025-04-21,1,112.98,Hervia-Casas
+144,C005,1,2025-04-21,1,277.58,"Fuertes, Bayona and Galan"
+145,C014,1,2024-11-16,1,288.24,Guijarro LLC
+146,C020,9,2025-04-11,2,416.85,Acedo LLC
+147,C028,1,2025-06-15,1,232.38,Castillo PLC
+148,C008,4,2024-02-29,3,449.4,Canet Ltd
+149,C027,7,2025-06-21,1,184.67,Catalá Inc
+150,C024,6,2024-05-23,1,93.96,Morante Inc
+151,C009,8,2024-01-01,2,152.66,Badía-Castañeda
+152,C026,3,2025-03-17,3,225.33,Zorrilla-Carballo
+153,C015,9,2025-03-20,3,280.6,Tamayo Group
+154,C020,6,2025-04-14,2,55.55,Vilanova-Canales
+155,C016,3,2024-08-04,1,125.24,"Giralt, Aroca and Vázquez"
+156,C004,3,2024-04-09,2,53.05,Anguita-Barrera
+157,C011,3,2024-08-25,2,485.93,Roldan-Campoy
+158,C019,9,2024-09-02,1,356.77,"Salcedo, Beltrán and Berrocal"
+159,C022,8,2024-04-25,1,335.0,"Colomer, Bastida and Cases"
+160,C019,7,2024-03-19,3,277.98,"Morcillo, Piquer and Mariño"
+161,C019,7,2024-08-05,2,484.57,"Ros, Cabezas and Carbó"
+162,C015,10,2025-06-11,3,275.21,"Garrido, Ropero and Sanmiguel"
+163,C026,4,2025-07-08,3,267.32,Riba LLC
+164,C026,3,2025-05-22,3,159.76,Pujadas-Ricart
+165,C006,3,2025-03-07,3,345.79,Milla Group
+166,C026,9,2024-04-17,1,214.61,"Jara, Perelló and Corominas"
+167,C013,10,2025-02-02,2,314.15,Bautista-Bou
+168,C008,5,2025-05-26,1,132.37,Buendía Group
+169,C016,9,2023-11-02,3,463.62,"Peralta, Castillo and Barreda"
+170,C002,6,2024-11-16,1,268.07,"Murcia, Carvajal and Reig"
+171,C023,8,2024-05-19,2,125.26,"Rocha, Aznar and Maestre"
+172,C010,3,2024-11-27,2,304.54,Ortiz-Calleja
+173,C024,4,2024-11-09,2,443.66,"Garcia, Cortes and Toledo"
+174,C025,4,2024-02-09,1,414.82,Ordóñez PLC
+175,C020,9,2024-05-30,1,195.64,Lopez PLC
+176,C028,3,2024-02-10,1,115.81,Amo-Lastra
+177,C026,2,2023-09-10,2,282.03,Llano Ltd
+178,C026,9,2025-04-02,2,148.02,Nicolás-Orozco
+179,C004,8,2023-08-23,1,105.91,Clemente PLC
+180,C028,5,2025-01-10,1,344.56,Baños-Cifuentes
+181,C021,2,2025-03-16,3,92.83,"Anglada, Bravo and Garrido"
+182,C001,6,2024-06-06,1,494.67,Santiago-Nogueira
+183,C021,3,2023-12-19,1,288.73,Mesa-Morata
+184,C024,3,2025-04-13,2,327.23,"Blazquez, Badía and Cortés"
+185,C018,10,2023-12-19,3,374.53,"Ayala, Bilbao and Lladó"
+186,C002,4,2024-07-28,2,223.65,"Rodrigo, Torralba and Salamanca"
+187,C028,10,2024-07-05,2,214.44,Garriga-Vila
+188,C030,1,2023-11-15,2,277.97,Ropero-Cantero
+189,C018,6,2024-03-26,2,313.9,"Torrecilla, Águila and Mendez"
+190,C003,7,2023-09-23,1,254.02,Prats PLC
+191,C001,3,2023-09-30,2,478.86,Fuente LLC
+192,C023,10,2024-01-30,3,84.68,Jaume LLC
+193,C017,1,2024-04-29,1,436.41,Aguilera Group
+194,C006,1,2025-03-21,3,411.4,Echevarría-Castelló
+195,C026,9,2024-06-09,1,479.34,"Grau, Vall and Pablo"
+196,C015,1,2023-10-13,2,140.3,Arnal-Rubio
+197,C001,4,2023-09-02,3,205.89,Bermejo-Millán
+198,C007,9,2024-11-08,1,238.92,Quiroga-Rios
+199,C014,6,2024-03-30,2,488.55,Quirós Inc
+200,C019,10,2024-04-27,1,245.74,Seguí Ltd
+201,C009,4,2025-08-02,1,474.6,Borja-Rueda
+202,C004,9,2025-06-04,2,484.09,Hervia Group
+203,C023,10,2024-11-18,1,146.76,Zamora-Bermúdez
+204,C001,7,2024-06-21,2,300.18,Nicolás-Giralt
+205,C007,7,2024-05-03,2,358.83,Benito PLC
+206,C007,8,2024-12-22,1,91.39,Viana and Sons
+207,C014,3,2025-07-22,2,146.62,Ortega-Coloma
+208,C021,5,2024-02-18,2,235.4,Coll LLC
+209,C018,8,2024-01-19,2,460.7,Coronado Ltd
+210,C012,10,2023-10-16,1,488.29,Uribe Group
+211,C019,7,2025-03-26,2,470.84,"Sanchez, Moraleda and Molina"
+212,C019,3,2023-12-14,3,476.77,Bayo-Somoza
+213,C030,10,2024-07-27,1,412.9,"Mateo, Llobet and Barbero"
+214,C023,7,2024-05-18,3,95.46,"Benavent, Menéndez and Serrano"
+215,C008,10,2024-08-04,1,220.27,Barberá LLC
+216,C008,10,2025-05-25,1,471.51,Benítez-Bosch
+217,C022,6,2024-12-08,2,55.13,"Vendrell, Planas and Sevillano"
+218,C015,7,2024-11-11,1,448.05,"Armengol, Sandoval and Fabra"
+219,C009,2,2024-04-24,1,203.81,"Tamarit, Vallejo and Contreras"
+220,C006,1,2023-10-06,1,198.99,Calderón-Nuñez
+221,C004,1,2025-02-23,2,307.3,Vargas Ltd
+222,C010,2,2023-12-31,2,429.7,Huguet Ltd
+223,C012,3,2024-07-24,2,70.08,Zamora-Yáñez
+224,C018,1,2024-12-04,2,418.28,Pascual LLC
+225,C020,3,2025-07-31,1,477.16,Ponce-Rebollo
+226,C011,2,2025-04-11,1,224.64,Badía-Nadal
+227,C019,10,2023-10-09,3,391.27,Busquets-Pomares
+228,C029,7,2024-03-26,2,222.37,Conesa-Mínguez
+229,C008,1,2023-10-21,3,263.85,"Cid, Olmo and Menéndez"
+230,C015,6,2025-01-09,2,377.96,"Pou, Castelló and Blazquez"
+231,C028,6,2024-04-15,1,281.87,"Peñas, Moya and Castell"
+232,C006,4,2025-01-20,1,426.64,"Zurita, Bueno and Roda"
+233,C013,2,2024-09-16,3,63.75,Alfaro-Pareja
+234,C027,2,2024-04-14,2,62.35,Gargallo LLC
+235,C007,5,2025-04-05,3,234.28,Fernandez-Gonzalo
+236,C026,1,2023-12-03,1,163.58,Berenguer LLC
+237,C013,10,2025-06-04,1,53.31,Vera PLC
+238,C011,5,2025-05-28,2,345.25,"Zurita, Arellano and Navarro"
+239,C016,5,2025-06-29,2,458.11,"Castro, Peñas and Correa"
+240,C029,9,2023-12-23,1,182.2,Daza Ltd
+241,C012,5,2024-07-23,3,182.32,Reig LLC
+242,C003,8,2025-01-25,1,275.21,"Gámez, Saldaña and López"
+243,C016,6,2025-03-25,3,493.99,"Sanchez, Guillén and Haro"
+244,C020,7,2024-04-15,3,243.23,Ferrera-Pedro
+245,C024,4,2025-01-26,1,362.09,"Saez, Serrano and Luján"
+246,C015,9,2025-04-14,3,285.85,Valverde-Álamo
+247,C001,10,2024-07-09,3,126.04,Flores PLC
+248,C027,1,2023-12-04,1,360.39,Azorin-Terrón
+249,C017,5,2025-06-27,3,322.54,Calderon-Villalobos
+250,C007,10,2025-06-10,1,400.08,López Inc
+251,C030,8,2025-04-02,2,155.53,Llamas Group
+252,C003,9,2025-07-22,1,375.6,"Colom, Ruiz and Bravo"
+253,C002,2,2025-07-26,1,443.36,Sanmartín LLC
+254,C012,8,2025-08-10,3,170.74,Ribera Inc
+255,C015,5,2024-06-21,2,360.46,"Pereira, Gutiérrez and Polo"
+256,C013,6,2023-10-21,3,62.97,Gomez-Anaya
+257,C011,1,2024-04-22,3,440.75,Naranjo and Sons
+258,C012,7,2023-12-03,1,427.56,Madrid Group
+259,C003,8,2025-02-09,2,158.4,Somoza Group
+260,C003,8,2024-12-08,2,192.23,Bernad Inc
+261,C018,4,2024-03-04,3,352.16,Conde PLC
+262,C015,2,2025-08-18,1,391.69,"Álamo, Rocha and Cantero"
+263,C004,1,2025-04-12,1,271.59,Gámez-Mascaró
+264,C027,10,2023-11-21,1,397.47,Gómez Group
+265,C019,3,2024-12-27,3,416.86,"Sebastián, Barros and Cantero"
+266,C014,10,2025-05-29,3,393.07,Alegre-Villalba
+267,C018,6,2024-11-07,3,381.57,Cobo LLC
+268,C018,6,2024-07-17,3,101.93,Osorio and Sons
+269,C001,7,2024-11-04,1,73.88,Exposito-Boada
+270,C027,1,2024-09-28,3,402.96,Bauzà-Zorrilla
+271,C024,9,2024-10-14,2,156.92,"Vera, Almagro and Portero"
+272,C020,8,2025-06-27,1,460.17,Arranz-Pombo
+273,C006,9,2024-06-03,1,219.74,Alegre-Palau
+274,C002,10,2025-04-22,3,185.52,Ochoa and Sons
+275,C013,2,2025-03-10,2,149.54,"Calleja, Márquez and Cañellas"
+276,C018,1,2023-09-22,1,351.02,Nevado-Díez
+277,C027,6,2025-05-24,3,411.27,"Sobrino, Tejero and Esparza"
+278,C022,4,2025-05-10,3,240.89,Barroso Ltd
+279,C022,3,2025-04-12,1,256.65,Arco-Marcos
+280,C013,8,2024-01-22,3,232.0,Flores Inc
+281,C028,2,2024-04-20,2,467.62,Villalba-Puig
+282,C013,7,2025-05-13,3,63.87,"Sáenz, Isern and Arce"
+283,C022,6,2025-03-26,1,299.09,"Feijoo, Macias and Palau"
+284,C010,4,2025-06-18,3,383.64,Mármol LLC
+285,C006,10,2023-11-23,1,433.12,Rueda-Páez
+286,C021,4,2025-03-18,1,178.31,Pomares-Nicolau
+287,C022,5,2024-01-11,3,312.88,Valencia-Pedrero
+288,C024,6,2025-08-05,2,258.28,"Lasa, Blanch and Rodriguez"
+289,C009,2,2023-10-19,3,83.93,Escribano-Marin
+290,C007,1,2024-04-24,3,167.28,Bernal LLC
+291,C001,4,2025-01-13,3,357.87,Medina-Salmerón
+292,C002,4,2024-11-29,2,154.29,"Rojas, Diaz and Saldaña"
+293,C021,6,2024-05-18,1,366.68,Arnal-Osorio
+294,C009,7,2024-12-08,1,282.37,Llobet-Barceló
+295,C021,5,2023-10-16,1,117.61,"Ramis, Parra and Vilalta"
+296,C022,8,2025-05-02,2,144.82,"Cuesta, Anguita and Clavero"
+297,C005,9,2025-06-08,1,450.86,"Ríos, Arana and Cases"
+298,C001,5,2023-10-10,1,147.47,Pazos LLC
+299,C020,10,2024-06-11,1,153.42,"Antúnez, Corral and Sandoval"
+300,C002,9,2024-06-02,3,388.57,Saldaña-Benítez
