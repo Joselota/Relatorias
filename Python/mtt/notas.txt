@@ -1,0 +1,5 @@
+Primera línea: Recordatorio de la clase.
+Segunda línea: Repasar estructuras de control.
+Tercera línea: Terminar el ejercicio de archivos.
+Cuarta línea: Subir tarea a la plataforma.
+Quinta línea: ¡Listo!
