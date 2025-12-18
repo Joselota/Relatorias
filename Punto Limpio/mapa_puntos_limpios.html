@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92dd29c1bf82517773ed2a2d8afbea34 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+            top: 10px; left: 50px; width: 300px; height: 60px; 
+            background-color: white; border:2px solid #2E7D32; z-index:9999; 
+            font-size:16px; padding: 10px; border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+    <h4 style="margin: 0; color: #2E7D32;">
+        ♻️ Puntos Limpios - Santiago
+    </h4>
+    <p style="margin: 5px 0; font-size: 12px; color: #666;">
+        10 ubicaciones disponibles
+    </p>
+</div>
+    
+<div style="
+position: fixed;
+bottom: 40px;
+left: 40px;
+width: 220px;
+background-color: white;
+border: 2px solid grey;
+z-index:9999;
+font-size:14px;
+padding: 10px;
+">
+<b>Convenciones</b><br>
+<span style="color:#2E7D32;">●</span> Acepta RAEE<br>
+<span style="color:#4173E7;">●</span> No acepta RAEE
+</div>
+    
+            <div class="folium-map" id="map_92dd29c1bf82517773ed2a2d8afbea34" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_92dd29c1bf82517773ed2a2d8afbea34 = L.map(
+                "map_92dd29c1bf82517773ed2a2d8afbea34",
+                {
+                    center: [-33.45, -70.65],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_32f95a096af5cfe494e8f30768fa97f7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_32f95a096af5cfe494e8f30768fa97f7.addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+            var circle_marker_b4a870c2526d75156a5304031793b181 = L.circleMarker(
+                [-33.42799, -70.66843],
+                {"bubblingMouseEvents": true, "color": "#2E7D32", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E7D32", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_ad4d688ee785d915334d97f226959c37 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_50af85887952ab26a5988dd7ec4da0f4 = $(`<div id="html_50af85887952ab26a5988dd7ec4da0f4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio Parque de los Reyes         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> Sí       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">Pilas y baterías</span>       </div>     </div>     </div>`)[0];
+                popup_ad4d688ee785d915334d97f226959c37.setContent(html_50af85887952ab26a5988dd7ec4da0f4);
+            
+        
+
+        circle_marker_b4a870c2526d75156a5304031793b181.bindPopup(popup_ad4d688ee785d915334d97f226959c37)
+        ;
+
+        
+    
+    
+            circle_marker_b4a870c2526d75156a5304031793b181.bindTooltip(
+                `<div>
+                     <b>Punto Limpio Parque de los Reyes</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e68081faf541a7b37ea55c71575eb09e = L.circleMarker(
+                [-33.39324, -70.60088],
+                {"bubblingMouseEvents": true, "color": "#2E7D32", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E7D32", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_7d985e739a661a1bfcfddfec9e1397ad = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5de986329787647f208043028f5208fa = $(`<div id="html_5de986329787647f208043028f5208fa" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio Vitacura         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> Sí       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">Aceptan electrodomésticos, artículos electrónicos, monitores y televisores.</span>       </div>     </div>     </div>`)[0];
+                popup_7d985e739a661a1bfcfddfec9e1397ad.setContent(html_5de986329787647f208043028f5208fa);
+            
+        
+
+        circle_marker_e68081faf541a7b37ea55c71575eb09e.bindPopup(popup_7d985e739a661a1bfcfddfec9e1397ad)
+        ;
+
+        
+    
+    
+            circle_marker_e68081faf541a7b37ea55c71575eb09e.bindTooltip(
+                `<div>
+                     <b>Punto Limpio Vitacura</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_635b2398ca77c1d3b2bd9c309e6fa370 = L.circleMarker(
+                [-33.40789, -70.56872],
+                {"bubblingMouseEvents": true, "color": "#2E7D32", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E7D32", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_9430116224423b52d0683bb742c2e301 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ba4cc13bbea37a03969f162f26e8b7a5 = $(`<div id="html_ba4cc13bbea37a03969f162f26e8b7a5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio Las Condes         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> Sí       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">Artículos electrónicos en general y electrodomésticos</span>       </div>     </div>     </div>`)[0];
+                popup_9430116224423b52d0683bb742c2e301.setContent(html_ba4cc13bbea37a03969f162f26e8b7a5);
+            
+        
+
+        circle_marker_635b2398ca77c1d3b2bd9c309e6fa370.bindPopup(popup_9430116224423b52d0683bb742c2e301)
+        ;
+
+        
+    
+    
+            circle_marker_635b2398ca77c1d3b2bd9c309e6fa370.bindTooltip(
+                `<div>
+                     <b>Punto Limpio Las Condes</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a280039926459b84d497be0b12f4260 = L.circleMarker(
+                [-33.49772, -70.60764],
+                {"bubblingMouseEvents": true, "color": "#2E7D32", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E7D32", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_37ffbaa7a560d3f0b98627bd79cd40bf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ada9c9f79fe1db6cf2079ac2b73f1981 = $(`<div id="html_ada9c9f79fe1db6cf2079ac2b73f1981" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio Central UC         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> Sí       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">Cables, cargadores, celulares y computadores pequeños</span>       </div>     </div>     </div>`)[0];
+                popup_37ffbaa7a560d3f0b98627bd79cd40bf.setContent(html_ada9c9f79fe1db6cf2079ac2b73f1981);
+            
+        
+
+        circle_marker_2a280039926459b84d497be0b12f4260.bindPopup(popup_37ffbaa7a560d3f0b98627bd79cd40bf)
+        ;
+
+        
+    
+    
+            circle_marker_2a280039926459b84d497be0b12f4260.bindTooltip(
+                `<div>
+                     <b>Punto Limpio Central UC</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26da641d2abb381a937e601691b6cf55 = L.circleMarker(
+                [-33.50449, -70.64347],
+                {"bubblingMouseEvents": true, "color": "#4173E7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4173E7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_e0810e00468f714d790facca437dd08b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_07c0ec58288c60712151df4d8d973861 = $(`<div id="html_07c0ec58288c60712151df4d8d973861" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio San Miguel         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> No       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">Generalmente recibe lo básico. Aunque aceptan metales, la "chatarra electrónica" no siempre está garantizada si el punto está en mantención (revisa si está abierto antes de ir, ya que a veces cierran temporalmente)</span>       </div>     </div>     </div>`)[0];
+                popup_e0810e00468f714d790facca437dd08b.setContent(html_07c0ec58288c60712151df4d8d973861);
+            
+        
+
+        circle_marker_26da641d2abb381a937e601691b6cf55.bindPopup(popup_e0810e00468f714d790facca437dd08b)
+        ;
+
+        
+    
+    
+            circle_marker_26da641d2abb381a937e601691b6cf55.bindTooltip(
+                `<div>
+                     <b>Punto Limpio San Miguel</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dee147ce623c6c38e3986778ac22c684 = L.circleMarker(
+                [-33.5181, -70.71437],
+                {"bubblingMouseEvents": true, "color": "#4173E7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4173E7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_8d57eb78654a4f78b1ad1d3c82c8d61b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7614854e4620026f6179c80cf6f03602 = $(`<div id="html_7614854e4620026f6179c80cf6f03602" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio TriCiclos - Cerrillos         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> No       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">TriCiclos se enfoca en la trazabilidad de envases (PET, PEAD, etc.)</span>       </div>     </div>     </div>`)[0];
+                popup_8d57eb78654a4f78b1ad1d3c82c8d61b.setContent(html_7614854e4620026f6179c80cf6f03602);
+            
+        
+
+        circle_marker_dee147ce623c6c38e3986778ac22c684.bindPopup(popup_8d57eb78654a4f78b1ad1d3c82c8d61b)
+        ;
+
+        
+    
+    
+            circle_marker_dee147ce623c6c38e3986778ac22c684.bindTooltip(
+                `<div>
+                     <b>Punto Limpio TriCiclos - Cerrillos</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bccc84fbd6e84b69f7c786c49aa2a0f5 = L.circleMarker(
+                [-33.45356, -70.66699],
+                {"bubblingMouseEvents": true, "color": "#4173E7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4173E7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_28395ee36e9d56c2abeff94a473da65d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0073d7e1d06e472a79c7192cf22f6de3 = $(`<div id="html_0073d7e1d06e472a79c7192cf22f6de3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio Republica         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> No       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">Enfocado casi 100% en plásticos, papel, cartón, vidrio y latas.</span>       </div>     </div>     </div>`)[0];
+                popup_28395ee36e9d56c2abeff94a473da65d.setContent(html_0073d7e1d06e472a79c7192cf22f6de3);
+            
+        
+
+        circle_marker_bccc84fbd6e84b69f7c786c49aa2a0f5.bindPopup(popup_28395ee36e9d56c2abeff94a473da65d)
+        ;
+
+        
+    
+    
+            circle_marker_bccc84fbd6e84b69f7c786c49aa2a0f5.bindTooltip(
+                `<div>
+                     <b>Punto Limpio Republica</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe716332aeb225b099a36f70948282be = L.circleMarker(
+                [-33.42304, -70.67287],
+                {"bubblingMouseEvents": true, "color": "#2E7D32", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E7D32", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_eea6fdb7990b61211cba7727785ded83 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d01fda41f14c1787a96fe710ce4a2604 = $(`<div id="html_d01fda41f14c1787a96fe710ce4a2604" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio Juan Antonio Ríos         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> Sí       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">Chatarra electrónica y pilas</span>       </div>     </div>     </div>`)[0];
+                popup_eea6fdb7990b61211cba7727785ded83.setContent(html_d01fda41f14c1787a96fe710ce4a2604);
+            
+        
+
+        circle_marker_fe716332aeb225b099a36f70948282be.bindPopup(popup_eea6fdb7990b61211cba7727785ded83)
+        ;
+
+        
+    
+    
+            circle_marker_fe716332aeb225b099a36f70948282be.bindTooltip(
+                `<div>
+                     <b>Punto Limpio Juan Antonio Ríos</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_657a6bc092bf1f9cb41667f0c8c0ec2d = L.circleMarker(
+                [-33.42004, -70.66539],
+                {"bubblingMouseEvents": true, "color": "#4173E7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4173E7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_9a248325f50bb2417677d3ab64a66bc5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5330d36d86843b9b70f1f5cf4a0a7c3e = $(`<div id="html_5330d36d86843b9b70f1f5cf4a0a7c3e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio El Quillay         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> No       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">Recibe pilas, pero no está equipado para recibir computadores o electrodomésticos grandes.</span>       </div>     </div>     </div>`)[0];
+                popup_9a248325f50bb2417677d3ab64a66bc5.setContent(html_5330d36d86843b9b70f1f5cf4a0a7c3e);
+            
+        
+
+        circle_marker_657a6bc092bf1f9cb41667f0c8c0ec2d.bindPopup(popup_9a248325f50bb2417677d3ab64a66bc5)
+        ;
+
+        
+    
+    
+            circle_marker_657a6bc092bf1f9cb41667f0c8c0ec2d.bindTooltip(
+                `<div>
+                     <b>Punto Limpio El Quillay</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cdda4e4be5881e824e08cbf3c491a27d = L.circleMarker(
+                [-33.43364, -70.6417],
+                {"bubblingMouseEvents": true, "color": "#4173E7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4173E7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+        var popup_e6ea4dd8e87b506d66b824435856d373 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eeaf34a0cf86d856ea6c98f97ca951d8 = $(`<div id="html_eeaf34a0cf86d856ea6c98f97ca951d8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; line-height: 1.35; width: 260px;">         <h4 style="color: #2E7D32; margin-bottom: 10px;">             ♻️ Punto Limpio Bellavista         </h4>       <div style="margin-bottom: 6px;">         <b>RAEE:</b> No       </div>        <div>         <b>Tipos aceptados:</b><br>         <span style="color:#333;">Su fuerte son los envases domiciliarios básicos.</span>       </div>     </div>     </div>`)[0];
+                popup_e6ea4dd8e87b506d66b824435856d373.setContent(html_eeaf34a0cf86d856ea6c98f97ca951d8);
+            
+        
+
+        circle_marker_cdda4e4be5881e824e08cbf3c491a27d.bindPopup(popup_e6ea4dd8e87b506d66b824435856d373)
+        ;
+
+        
+    
+    
+            circle_marker_cdda4e4be5881e824e08cbf3c491a27d.bindTooltip(
+                `<div>
+                     <b>Punto Limpio Bellavista</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+        
+    
+            var locate_control_d3c9ac2cb7de1ec629143cdd76579bef = L.control.locate(
+                {}
+            ).addTo(map_92dd29c1bf82517773ed2a2d8afbea34);
+            
+        
+    
+            map_92dd29c1bf82517773ed2a2d8afbea34.fitBounds(
+                [[-33.5181, -70.71437], [-33.39324, -70.56872]],
+                {"padding": [50, 50]}
+            );
+        
+</script>
+</html>
