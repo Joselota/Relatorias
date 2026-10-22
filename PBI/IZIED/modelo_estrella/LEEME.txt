@@ -1,0 +1,20 @@
+MODELO ESTRELLA DE VENTAS
+
+Importar los cuatro CSV con codificación UTF-8 y separador coma.
+Configurar PrecioUnidad y Descuento como decimal usando configuración regional Inglés (Estados Unidos), ya que usan punto decimal. Cantidad e IdLinea son enteros. Fecha y FechaPedido son fechas ISO. IdCliente es texto. Las claves relacionadas deben tener el mismo tipo.
+
+Relaciones (filtro único desde dimensión hacia hechos):
+DimClientes[IdCliente] 1 -> * FactVentas[IdCliente]
+DimProductos[IdProducto] 1 -> * FactVentas[IdProducto]
+DimFecha[Fecha] 1 -> * FactVentas[FechaPedido]
+
+Marcar DimFecha como tabla de fechas usando Fecha. Ordenar Mes por MesNumero.
+
+FactVentas contiene 1097 líneas. DimClientes: 30; DimProductos: 90. DimFecha cubre años completos 2023 a 2025.
+FactVentas se construyó combinando detalles_pedido con pedidos por IdPedido. Se agregaron IdCliente y FechaPedido. IdLinea es un índice del orden de origen, no un identificador persistente del sistema. Se conservaron las líneas repetidas por pedido y producto.
+Cargo no se incorporó porque pertenece al pedido y se duplicaría al sumar líneas. UnidadesEnStock en DimProductos es un atributo del archivo de origen, no una medida de ventas ni inventario histórico.
+
+Medidas DAX (adaptar separadores si la configuración local lo requiere):
+Ventas netas = SUMX(FactVentas, FactVentas[Cantidad] * FactVentas[PrecioUnidad] * (1 - FactVentas[Descuento]))
+Unidades vendidas = SUM(FactVentas[Cantidad])
+Cantidad de pedidos = DISTINCTCOUNT(FactVentas[IdPedido])
