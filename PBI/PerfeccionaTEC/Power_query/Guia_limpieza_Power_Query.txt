@@ -1,0 +1,24 @@
+PRÁCTICA DE LIMPIEZA EN POWER QUERY
+
+32 filas y 8 columnas. Copia de los clientes del modelo preparado en este chat, con errores intencionales. Los originales no se modificaron.
+
+EJERCICIOS
+1. Importar Clientes_para_limpieza.csv como UTF-8, delimitador coma. Mantener inicialmente las columnas como texto y revisar el paso automático de cambio de tipo.
+2. Revisar calidad, distribución y perfil de columnas en todos los datos.
+3. Recortar y limpiar textos; buscar espacios dobles y espacios de no separación (carácter 160), que pueden requerir reemplazo explícito.
+4. Normalizar IdCliente a mayúsculas y detectar claves vacías.
+5. Revisar mayúsculas en nombres, ciudades y países. No aplicar nombre propio sin considerar siglas y nombres comerciales.
+6. Unificar vacíos y marcadores N/A y Sin dato como null donde corresponda, sin inventar valores faltantes.
+7. Convertir Latitud y Longitud a decimal. Hay separadores punto y coma mezclados: normalizar estas columnas y elegir la configuración regional adecuada. Conservar una referencia a los valores originales para auditar errores.
+8. Detectar errores de conversión y coordenadas fuera de rango: latitud entre -90 y 90, longitud entre -180 y 180. No sustituir errores por cero.
+9. Diferenciar duplicados exactos de registros con la misma clave pero datos diferentes.
+10. Crear consultas DimClientes_Limpios e IncidenciasClientes, documentando las decisiones. No eliminar claves vacías ni elegir una ciudad arbitrariamente sin justificar el tratamiento.
+11. Comprobar que la dimensión a cargar tiene claves únicas y no vacías. Renombrar pasos para explicar cada transformación.
+
+CONTROL PARA QUIEN FACILITA
+Se agregaron dos filas: un duplicado exacto y una variante con igual clave y diferente ciudad. Quitando solo el duplicado exacto quedan 31 filas.
+Una clave está vacía; otra tiene espacios y otra minúsculas.
+Hay textos vacíos, marcadores de ausencia, espacios adicionales, una tabulación y un espacio de no separación.
+Coordenadas: un texto no numérico, una longitud vacía, una latitud fuera de rango, una longitud fuera de rango y dos valores con coma decimal.
+El total final depende de cómo se resuelvan las incidencias. Rango válido no garantiza ubicación correcta; las coordenadas originales no se han contrastado con ciudades o países.
+Antes de conectar esta práctica con FactVentas, revisar el efecto de los clientes excluidos en las relaciones.
